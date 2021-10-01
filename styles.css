@@ -2,31 +2,42 @@ body {  background-color: #e1e9e9; text-align: center; font-family: Arial, Helve
 .center { display: block; margin-left: auto; margin-right: auto; width: 50%; }
 
 header {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    min-height: 75px;
+    width: 70vw;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 20px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: dodgerblue;
-    z-index: 1;
+    background-color: #2767bbb2;
 }
 
 h1 {font-family: Georgia, 'Times New Roman', Times, serif}
 #nav-bar {font-size: 18px;}
-a { padding: 3px 7px; text-decoration: none; color: white; border: 1px solid whitesmoke; }
-#header-img { width: 150px; height: auto; padding: 5px 0;}
+#nav-bar a { padding: 3px 7px; text-decoration: none; color: white; border: 1px solid whitesmoke; border-radius: 7px; }
+#nav-bar a:hover {background-color: #2767bbf6;}
+#header-img { width: 150px; height: auto; border-radius: 30px; border: 2px solid white;}
 
-.container { position: relative; top: 20vh; height: 100px; width: 100vw; margin: auto; }
-#home { margin: 20px; line-height: 30px;}
-#vid { position: relative; top: 20vh; text-align: center; line-height: 50px; }
+.container { min-height: 80vh; width: 70vw; margin: 0 auto; background-color: #8f121271; padding: 1px;}
+#home { line-height: 30px;}
+#features {display: flex; justify-content: space-between;}
+aside {padding: 30px;}
+
+#vid { text-align: center; line-height: 30px; padding: 20px;}
 #video > iframe { max-width: none; }
-#register { position: relative; top: 30vh; padding: 10px;  margin: 10px; height: 20vh;}
+#register { padding: 30px 10px;}
+
+
+footer { font-size: 12px; text-align: center; margin: 10px 10vw 10vh 10vw; }
+ul {list-style-type: none;margin: 0; padding: 0;}
+li { display: inline;padding: 0 20px;  }
+
 
 @media (max-width: 700px) {
-    h1 {width: 40%; font-size: 16px;}
-    #nav-bar { width: 30%; font-size: 12px;}
+    header {flex-wrap: wrap; min-height: 20vh;}
+    h1 {width: 40%; font-size: 20px;}
+    #nav-bar {  font-size: 12px;}
+    #features {flex-wrap: wrap;}
     #video { width: 80%;}
     /* #header-img { margin-top: 10px; width: 20%;} */
 }
